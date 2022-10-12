@@ -1,10 +1,30 @@
-![](Ngineer%20-%20Green.png)
+![N-gineer](assets/Ngineer%20-%20Green.png)
 # N-gineers Start Here
 Getting up and running with N Lang.
 
 Welcome! This is the place to get up and running with writing and deploying N Lang programs.
 
 ## FAQ & Quick Reference
+- [What is N Lang?](#What%20is%20N%20Lang)
+- [Why create a new language?](#Why%20create%20a%20new%20language)
+- [Is N Lang hard to learn?](#Is%20N%20Lang%20hard%20to%20learn)
+- [Why would I use N Lang?](#Why%20would%20I%20use%20N%20Lang)
+- [What would I use N Lang for?](#What%20would%20I%20use%20N%20Lang%20for)
+- [What is an N-gineer?](#What%20is%20an%20N-gineer)
+- [What is an N Lang program?](#What%20is%20an%20N%20Lang%20program)
+- [How do I learn to write an N Lang program?](#How%20do%20I%20learn%20to%20write%20an%20N%20Lang%20program)
+- [Is N Lang extendable?](#Is%20N%20Lang%20extendable)
+- [Can I develop my own N Lang blocks?](#Can%20I%20develop%20my%20own%20N%20Lang%20blocks)
+- [How do I develop my N Lang program?](#How%20do%20I%20develop%20my%20N%20Lang%20program)
+- [How do I parse N for an Interpreter?](#How%20do%20I%20parse%20N%20for%20an%20Interpreter)
+- [How do I interpret my parsed N Lang program?](#How%20do%20I%20interpret%20my%20parsed%20N%20Lang%20program)
+- [How do I deploy my N Lang program as an application?](#How%20do%20I%20deploy%20my%20N%20Lang%20program%20as%20an%20application)
+- [How do I message my N Lang application?](#How%20do%20I%20message%20my%20N%20Lang%20application)
+- [Can I write my own N Lang parser?](#Can%20I%20write%20my%20own%20N%20Lang%20parser)
+- [Can I write my own N Lang interpreter?](#Can%20I%20write%20my%20own%20N%20Lang%20interpreter)
+- [Can I write my own N Lang gateway?](#Can%20I%20write%20my%20own%20N%20Lang%20gateway)
+- [Can I write my own N Lang blocks?](#Can%20I%20write%20my%20own%20N%20Lang%20blocks)
+
 
 ### What is N Lang?
 [N Lang](https://github.com/squillo/n) is the world's first network service language — a unique blend of orchestration, configuration, and programming. N Lang provides a construct for writing sub-dividable programs that are highly distributable.
@@ -42,7 +62,7 @@ The best way to develop an N Lang program is using the [Squillo NDE](https://git
 ### How do I parse N for an Interpreter?
 Eventually, there will be several options for parsing N Lang programs. In the meantime, Squillo developed the [Raconteur Parser](https://github.com/squillo/raconteur) for N Lang programs. You can use the [Raconteur-cli](https://github.com/squillo/raconteur-cli) or Squillo NDE to parse your N Lang program for an N Lang interpreter.
 
-### How do interpret my parsed N Lang program?
+### How do I interpret my parsed N Lang program?
 Eventually, there will be several options to interpret parsed N Lang programs, in the mean time Squillo developed Raconteur Object Interpreters (ROIs) for the Raconteur N Lang parser. Currently, there is the [ROI: Elixir](https://github.com/squillo/ex_raconteur_umbrella) written in Elixir. 
 
 ### How do I deploy my N Lang program as an application?
@@ -52,7 +72,7 @@ Once you've parsed your N Lang program and selected your interpreter. You can de
 All N Lang applications use the N Lang Message Wire Protocol (MWP) to send and receive messages. Messages tell the N Lang application what part of a program to run and with what data. By default, a message request and response is a synchronous operation.
 
 ### How do I message my N Lang application?
- Depending on your N Lang Interpreter, you can send messages over an N Gateway. Eventually, there will be several N Gateway options, in the meantime, Squillo developed a [Kong Gateway plugin](https://github.com/squillo/rcp-gateway-kong) that converts HTTP requests to and from the N Lang Message Wire Protocol. This N Gateway is designed to work as a standalone but also works with the Raconteur Control Plane (RCP) "TODO LINK NEEDED" developed by Squillo.  
+ Depending on your N Lang Interpreter, you can send messages over an N Gateway. Eventually, there will be several N Gateway options, in the meantime, Squillo developed a [Kong Gateway plugin](https://github.com/squillo/rcp-gateway-kong) that converts HTTP requests to and from the N Lang Message Wire Protocol. This N Gateway is designed to work as a standalone plugin with Kong but also works with the Raconteur Control Plane (RCP) "TODO LINK NEEDED" developed by Squillo.  
 
 ### Can I write my own N Lang parser?
 Yes, as long as it follows the N Lang specification and is registered as an N Lang parser.
