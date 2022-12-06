@@ -32,7 +32,7 @@ Welcome! This is the place to get up and running with writing and deploying N La
 ### Why create a new language?
 Hyper-text transformed the way humans connect with each other. N Lang's goal is to transform the way systems connect. 
 
-First, we wanted to maximize speed, reliability, and maintainability for networked data. Next, we needed to create a way to directly express the relationship between networked data and data producers & consumers and how we could program that directly through interface that was as easy learning something like HTML.
+First, we wanted to maximize speed, reliability, maintainability, and security for networked data. Next, we needed to create a way to directly express the relationship between networked data and data producers & consumers and how we could program that directly through interface that was as easy learning something like HTML.
 
 Finally, we needed a language -> parser -> interpreter -> gateway design pattern that has a proven track record of growth and adoption.
 
