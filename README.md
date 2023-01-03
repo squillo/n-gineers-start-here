@@ -27,27 +27,34 @@ Welcome! This is the place to get up and running with writing and deploying N La
 
 
 ### What is N Lang?
-[N Lang](https://github.com/squillo/n) is the world's first "Node Language" for structuring data — a blend of orchestration, configuration, and programming. N Lang provides a construct for writing simple sub-dividable programs that build complex programs that are highly distributable.
+[N Lang](https://github.com/squillo/n) is the world's first "Node Language" for structuring data between models — a blend of orchestration, configuration, and programming. N Lang provides a construct for writing simple sub-dividable programs that build complex programs that are highly distributable.
 
 ### Why create a new language?
-Hyper-text transformed the way humans connect with each other. N Lang's goal is to transform the way systems connect. 
+Hyper-text transformed the way humans connect with each other. N Lang's goal is to transform the way data connects. 
 
-First, we wanted to maximize speed, reliability, maintainability, and security for networked data. Next, we needed to create a way to directly express the relationship between networked data and data producers & consumers and how we could program that directly through interface that was as easy learning something like HTML.
+First, we wanted to maximize speed, reliability, maintainability, and security for data. Next, we needed to create a way to directly express the relationship between data and data producers & consumers and how we could program that directly through an interface that was as easy learning something like HTML.
 
 Finally, we needed a language -> parser -> interpreter -> gateway design pattern that has a proven track record of growth and adoption.
 
 ### Is N Lang hard to learn?
-Subjectively no. It's a new mindset to learn, but it is specifically human-readable and is often familiar. It's designed around the concept that small simple systems make complex systems work. To do this, the language uses blocks and attributes to compose large systems from small systems.
+Subjectively no. It's a new mindset to learn, but it is specifically human-readable and is often familiar. It's designed around the concept that small simple systems make complex systems work. To do this, the language uses blocks, properties, and attributes to compose large systems from small systems.
 
 ### Why would I use N Lang?
-There are several reasons to use N Lang, particularly any time you have structured data.
+There are several reasons to use N Lang, particularly any time you have data and need to express it as an information model, operation model, or configuration / orchestration model with a singled unified language.
+
+#### Configuration Model
 - If you are already using a process like Infrastructure as Code, then you already know the advantages of configuration & orchestration repeatability coupled with version control for infrastructure. N Lang is the missing utility that extends those capabilities into service creation, integration, and recombination. Additionally, it's HCL compatible, so you can use it just like you would Terraform. 
+
+#### Operational Model
 - If you have an Internal Development Platform, N Lang is a perfect way to integrate and unify millions of services.
+- If you've built APIs before and want make them faster, more maintainable, more reliable, and more secure.
+
+#### Information Model
 - If you are using a Content Management System (CMS), then structuring your data using N Lang can create powerful CMS replacements.
 - If you have several types of data or APIs that changes data shape frequently, then N Lang will be your new best friend.
 
 ### What would I use N Lang for?
-N Lang is specifically designed for highly productive data-structuring, service creation, integration, and recombination that scales. It's specifically well suited to create, connect, and transform data while handling change and the faulty nature of networks.
+N Lang is specifically designed for highly productive data-structuring and modeling expressions. This could be used for service creation, integration, and recombination that scales. It's specifically well suited to create, connect, and transform data while handling change or the faulty nature of networks.
 
 ### What is an N-gineer?
 An N-gineer is someone that writes N Lang programs. We use a special name for them because N Lang programming is a combination of so many disciplines.  
@@ -59,7 +66,7 @@ N Lang programs are interpreted programs written in N Lang that create, connect,
 The best way to learn is by starting with the [N Lang Tutorial Series](https://github.com/squillo/n_tutorials). You could also learn all the ins and outs of N Lang by referring to the [N Lang Specification](https://github.com/squillo/n). 
 
 ### Is N Lang extendable? 
-N Lang is also extendable, which means that certain N Lang parsers and interpreters may have pre-written N Lang blocks that add common functionality. For example, Squillo's [Raconteur](https://github.com/squillo/raconteur) is equipped with definitions for advanced Network Operations, CQRS, Cron Jobs, Event busing, Webhooks, and more.  
+N Lang is also extendable, which means that certain N Lang parsers and interpreters may have pre-written N Lang blocks that add common functionality. For example, Squillo's [Raconteur](https://github.com/squillo/raconteur) an Operation Model expression of N Lang and is equipped with definitions for advanced Network Operations, CQRS, Cron Jobs, Event busing, Webhooks, and more.  
 
 ### Can I develop my own N Lang blocks?
 Yes, since N Lang is a construct for sub-dividable programs, block definitions can be created and then supported by an N Lang interpreter.
@@ -68,16 +75,16 @@ Yes, since N Lang is a construct for sub-dividable programs, block definitions c
 The best way to develop an N Lang program is using the [Squillo NDE](https://github.com/squillo/squillo-nde) and then parse your program for an N Lang interpreter. Any UTF-8 encoding editor is suitable. We denote N documents with a `.n` file extension. You can even parse markdown documents into N.
 
 ### How do I parse N for an Interpreter?
-Eventually, there will be several options for parsing N Lang programs. In the meantime, Squillo developed an open source parser and the [Raconteur Parser](https://github.com/squillo/raconteur) for N Lang programs. You can use the [Raconteur-cli](https://github.com/squillo/raconteur-cli) or Squillo NDE to parse your N Lang program for an N Lang interpreter.
+Eventually, there will be several options for parsing N Lang programs. In the meantime, Squillo developed an open source N parser and the closed source [Raconteur Parser](https://github.com/squillo/raconteur) for N Lang programs. You can use the Squillo NDE to parse your N Lang program for an N Lang interpreter or check out the [Raconteur-cli](https://github.com/squillo/raconteur-cli).
 
 ### How do I interpret my parsed N Lang program?
-There are several options to interpret parsed N Lang programs, including writing your own easily. For example, Squillo developed an open source network interpreter as well as the Raconteur Object Interpreters (ROIs) for the Raconteur N Lang parser for high-throughput network operations. Currently, there is the [ROI: Elixir](https://github.com/squillo/ex_raconteur_umbrella) written in Elixir. 
+There are several options to interpret parsed N Lang programs, including writing your own easily depending on your expression model. For example, Squillo developed the Raconteur Object Interpreters (ROIs) for the Raconteur N Lang parser for high-throughput network operations. Currently, there is the [ROI: Elixir](https://github.com/squillo/ex_raconteur_umbrella) written in Elixir. 
 
 ### How do I deploy my N Lang program as an application?
 Once you've parsed your N Lang program and selected your interpreter. You can deploy your N Lang application. Your interpreter could be a web framework like Svelte or React, or even a Network interpreter typically using a Docker Image of your Interpreter with your program as a volume.
 
 ### How do Network N Lang applications communicate?
-All Network N Lang applications use the N Lang Message Wire Protocol (MWP) to send and receive messages. Messages tell the Network N Lang application what part of a program to run and with what data. By default, a message request and response is a synchronous operation.
+All Network N Lang applications use the N Lang Message Wire Protocol (MWP) to send and receive messages over an N Lang Gateway. Messages tell the Network N Lang application what part of a program to run and with what data. N Lang Gateways convert between expression models or from another protocol into an N Lang protocl. 
 
 ### How do I message my Network N Lang application?
 Depending on your Network N Lang Interpreter, you can send messages over an N Gateway. Eventually, there will be several N Gateway options, in the meantime, Squillo developed a [Kong Gateway plugin](https://github.com/squillo/rcp-gateway-kong) that converts HTTP requests to and from the N Lang Message Wire Protocol. This N Gateway is designed to work as a standalone plugin with Kong but also works with the Raconteur Control Plane (RCP) "TODO LINK NEEDED" developed by Squillo.  
