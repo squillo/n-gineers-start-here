@@ -110,13 +110,13 @@ The world has seen some pretty incredible languages over the years, but N Lang i
 
 When we started N Lang, we saw how Hyper-text transformed how people connected with each other. **N Lang** aims to transform how **data** connects both humans and AI. We've taken decades of human experience and modern development demands to devise a simple and intuitive syntax that enables distributed and event-driven patterns and makes them second nature.
 
-We interviewed thousands of Engineers, Developers, Programmers, Designers, Architects, and even Business Owners to understand what they needed from software, and the result is a new language & system we could describe as "N Lang".
+We interviewed thousands of Engineers, Developers, Programmers, Designers, Architects, and even Business Owners to understand what they needed from software, and the result is a new language & system we could only describe as "N Lang".
 
 Modern teams need to move fast in a distributed world, but building secure and reliable systems at scale is REALLY hard. N Lang is here to make that easy.
 
-From **CEQRS** (Command, Event, Query, Responsibility, Segregation) and **CRDTs** to **immutable ledgers** and **hot module swapping**, we believe these making these “hard problems” simple make N Lang a go-to choice for building **reliable**, **maintainable**, and **secure** systems at scale.
+From **CEQRS** (Command, Event, Query, Responsibility, Segregation) and **CRDTs** to **immutable ledgers** and **hot module swapping**, we believe making these “hard problems” simple makes N Lang a go-to choice for building **reliable**, **maintainable**, and **secure** systems at scale.
 
-We also believe that Foreign functions should first class citizens. N Lang should be easy enough to be productive in a day, and still let you reach for the best tools for the job when you need them.
+We also believe that Foreign Functions should first class citizens. N Lang should be easy enough to be productive in a day, and still let you reach for the best tools for the job when you need them.
 
 Just as HTML introduced a straightforward way to structure content, we wanted to create a common thread for some of computing's most difficult problems — one that any developer could pick up quickly. 
 
